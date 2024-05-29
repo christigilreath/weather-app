@@ -7,5 +7,49 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Weather App</h1>
+      <h2 id="currentLocation"></h2>
+      <form action="">
+        <label for="search">Enter Location: </label>
+        <input type="text" id="search" name="search" />
+        <button type="submit">Search</button>
+      </form>
+    </header>
+    <section class="today">
+      <h2>Today's Weather</h2>
+      <h3 id="todaysDate">May 23, 2024</h3>
+      <div>
+        <p class="temp" id="currentTemperature">Temperature: 80&deg</p>
+        <p class="high" id="todaysHigh"></p>
+        <p class="low" id="todaysLow"></p>
+        <p class="sky" id="currentSky"></p>
+        <img id="currentSkyIcon"></img>
+        <p class="wind" id="currentWind">Wind: 5 mph E</p>
+        <p class="uv" id="currentUV">UV: 6</p>
+      </div>
+    </section>
+    <section>
+      <h2>Future Forecast</h2>
+      <div class="futureContainer">
+        <div class="tomorrow">
+          <h3 id="day2Date">May 24, 2024</h3>
+          <p class="high" id="day2High">Temperature: 80&deg</p>
+          <p class="low" id="day2Low"></p>
+          <p class="sky" id="day2Sky">Sky: Partly Cloudy</p>
+          <img id="day2SkyIcon"></img>
+         
+        </div>
+        <div class="2nd">
+          <h3 id="day3Date">May 25, 2024</h3>
+          <p class="high" id="day3High">Temperature: 80&deg</p>
+          <p class="low" id="day3Low">Temperature: 80&deg</p>
+          <p class="sky" id="day3Sky">Sky: Partly Cloudy</p>
+          <img id="day3SkyIcon"></img>
+          
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
